@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blockchain Forensics Agent — Multi-Agent AI</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#07080f;color:#c8cdd8;min-height:100vh}
+.bg-grid{position:fixed;top:0;left:0;width:100%;height:100%;background-image:linear-gradient(rgba(255,59,48,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,59,48,.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero{position:relative;padding:80px 20px 60px;text-align:center;z-index:1}
+.hero h1{font-size:3em;font-weight:800;background:linear-gradient(135deg,#ff3b30,#ff6b35,#ffd60a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px}
+.hero .sub{color:#6b7280;font-size:1.15em;max-width:650px;margin:0 auto 30px}
+.hero .sub .mimo{color:#ff6b35;font-weight:700}
+.stats{display:flex;justify-content:center;gap:50px;flex-wrap:wrap;margin:40px 0}
+.stat{text-align:center}
+.stat .num{font-size:2.4em;font-weight:800;background:linear-gradient(135deg,#ff3b30,#ff6b35);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat .label{color:#6b7280;font-size:.85em;margin-top:4px;text-transform:uppercase;letter-spacing:1px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;max-width:1100px;margin:0 auto;padding:0 20px;z-index:1;position:relative}
+.card{background:linear-gradient(145deg,#0d0f18,#111422);border:1px solid #1a1f33;border-radius:16px;padding:28px;transition:all .3s;overflow:hidden;position:relative}
+.card:hover{transform:translateY(-5px);border-color:#ff3b3030;box-shadow:0 20px 40px rgba(255,59,48,.05)}
+.card .icon{font-size:1.8em;margin-bottom:14px}
+.card h3{color:#e2e8f0;font-size:1.15em;margin-bottom:10px;font-weight:700}
+.card p{color:#6b7280;font-size:.9em;line-height:1.7}
+.pipeline{max-width:800px;margin:40px auto;padding:0 20px;z-index:1;position:relative}
+.pipeline h2{text-align:center;font-size:1.5em;color:#e2e8f0;margin-bottom:30px}
+.step{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #1a1f3320}
+.step .num{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#ff3b3020,#ff6b3520);display:flex;align-items:center;justify-content:center;font-weight:700;color:#ff3b30;font-size:.9em;flex-shrink:0}
+.step .text{color:#9ca3af;font-size:.95em}
+.step .text strong{color:#e2e8f0}
+.tech{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:50px 0;z-index:1;position:relative}
+.tag{background:#0d0f18;border:1px solid #1a1f33;border-radius:20px;padding:6px 18px;font-size:.85em;color:#ff6b35}
+footer{text-align:center;padding:40px;color:#374151;font-size:.85em;border-top:1px solid #1a1f3320;z-index:1;position:relative;margin-top:40px}
+footer .mimo{color:#ff6b35}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="hero">
+<h1>Blockchain Forensics Agent</h1>
+<p class="sub">Multi-Agent AI system for on-chain investigation, fraud detection, and compliance monitoring across major blockchains, powered by <span class="mimo">MiMo V2.5</span></p>
+<div class="stats">
+<div class="stat"><div class="num">6</div><div class="label">AI Agents</div></div>
+<div class="stat"><div class="num">41</div><div class="label">Tests</div></div>
+<div class="stat"><div class="num">5K+</div><div class="label">Lines of Code</div></div>
+<div class="stat"><div class="num">15</div><div class="label">Detection Algorithms</div></div>
+</div>
+</div>
+<div class="grid">
+<div class="card"><div class="icon">🔍</div><h3>TransactionTracer</h3><p>Multi-hop transaction tracing with taint propagation analysis. Tracks fund flows across addresses, detects circular flows, and identifies mixing/convergence points.</p></div>
+<div class="card"><div class="icon">👥</div><h3>WalletClusterer</h3><p>Identifies related wallets via co-spending analysis, temporal correlation, and behavioral fingerprinting. Detects Sybil clusters and coordinated manipulation.</p></div>
+<div class="card"><div class="icon">⚠️</div><h3>AnomalyDetector</h3><p>Statistical anomaly detection using Z-Score, IQR, Isolation Forest, and velocity analysis. Identifies unusual transaction patterns in real-time.</p></div>
+<div class="card"><div class="icon">🧩</div><h3>PatternAnalyzer</h3><p>Detects money laundering patterns: mixing services, layering chains, peel chains, and round-trip transactions. Behavioral pattern matching engine.</p></div>
+<div class="card"><div class="icon">⚖️</div><h3>ComplianceChecker</h3><p>OFAC sanctions screening, structuring detection, and FATF Travel Rule compliance. Generates compliance reports with risk assessments.</p></div>
+<div class="card"><div class="icon">📋</div><h3>ReportGenerator</h3><p>Automated forensic report generation with executive summaries, risk assessments, chain-of-custody documentation, and HTML export.</p></div>
+</div>
+<div class="pipeline">
+<h2>Investigation Pipeline</h2>
+<div class="step"><div class="num">1</div><div class="text"><strong>TransactionTracer</strong> traces fund flow and calculates taint scores</div></div>
+<div class="step"><div class="num">2</div><div class="text"><strong>WalletClusterer</strong> identifies related entities and Sybil clusters</div></div>
+<div class="step"><div class="num">3</div><div class="text"><strong>AnomalyDetector</strong> flags statistical outliers and velocity spikes</div></div>
+<div class="step"><div class="num">4</div><div class="text"><strong>PatternAnalyzer</strong> matches known laundering/ fraud patterns</div></div>
+<div class="step"><div class="num">5</div><div class="text"><strong>ComplianceChecker</strong> verifies sanctions and regulatory compliance</div></div>
+<div class="step"><div class="num">6</div><div class="text"><strong>ReportGenerator</strong> compiles findings into actionable forensic report</div></div>
+</div>
+<div class="tech">
+<span class="tag">MiMo V2.5</span><span class="tag">Python 3.11</span><span class="tag">Multi-Agent</span><span class="tag">Isolation Forest</span><span class="tag">Taint Analysis</span><span class="tag">OFAC Screening</span><span class="tag">FATF Travel Rule</span>
+</div>
+<footer>Blockchain Forensics Agent — Built with <span class="mimo">MiMo V2.5</span> Multi-Agent Architecture — 2026</footer>
+</body>
+</html>
